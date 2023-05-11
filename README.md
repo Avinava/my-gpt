@@ -1,2 +1,28 @@
 # my-gpt
 code demonstrates how to run nomic-ai gpt4all locally
+
+## Introduction
+This code demonstrates how to use the nomic-ai/gpt4all-j model from the Hugging Face transformers library to generate text-based responses to user input in a conversational manner. The program takes user input, passes it to the model, generates a response, and returns it to the user. This process is repeated until the user inputs "bye" or "exit" to end the conversation.
+
+## Installation and Setup
+To run this code using Poetry, you will need to have Poetry installed on your system along with Python 3. You can install Poetry by following the instructions in the official Poetry documentation.
+
+- Clone this repository: `git clone git@github.com:Avinava/my-gpt.git`
+- Navigate to the project directory: `cd my-gpt`
+Install the required packages using Poetry: `poetry install`
+- Note: when you run for the first time, it might take a while to start, since its going to download the models locally
+
+# Running the Program
+To run the program, simply execute the following command in a terminal or command prompt from the project directory:
+```
+poetry run python index.py
+```
+
+Once the program is running, it will prompt you to enter a message:
+```
+>>>
+```
+You can type your message and press enter to see the chatbot's response. To end the conversation, simply type "bye" or "exit".
+
+
+

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "project-friday-py"
+version = "0.1.0"
+description = ""
+authors = ["avi <avidev9@gmail.com>"]
+readme = "README.md"
+packages = [{include = "project_friday_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = "^4.29.0"
+pygpt4all = "^1.1.0"
+torch = "^2.0.1"
+accelerate = "^0.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "project-friday-py"
+name = "my-gpt"
 version = "0.1.0"
 description = ""
 authors = ["avi <avidev9@gmail.com>"]
 readme = "README.md"
-packages = [{include = "project_friday_py"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

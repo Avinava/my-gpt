@@ -39,7 +39,7 @@ if __name__ == "__main__":
                 continue
             # Check if user entered 'bye' or 'exit'
             if user_input.lower() in ["bye", "exit"]:
-                console.print(Text("Goodbye!", style="bold read"))
+                console.print("[bold red]Goodbye!")
                 break
             # get response from model
             with console.status("[bold green]Thinking...[/bold green]") as status:

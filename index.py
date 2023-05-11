@@ -20,7 +20,7 @@ model = AutoModelForCausalLM.from_pretrained(model_name, revision=revision, devi
 def get_response(input_text):
     tokenizer = AutoTokenizer.from_pretrained(model_name, revision=revision)
     input_ids = tokenizer.encode(tokenizer.eos_token + input_text + ' \n', return_tensors='pt')
-    response_ids = model.generate(input_ids, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    response_ids = model.generate(input_ids, max_length=100, pad_token_id=tokenizer.eos_token_id)
     response_text = tokenizer.decode(response_ids[0], skip_special_tokens=True)
     return response_text
 

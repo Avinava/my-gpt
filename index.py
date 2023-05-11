@@ -50,5 +50,5 @@ if __name__ == "__main__":
             console.print(f"[green]{res}")
             console.print(f"[bold blue]Time taken: {round(end_time - start_time)} seconds\n")
         except KeyboardInterrupt:
-            console.print(Text("KeyboardInterrupt received. Goodbye!", style="bold read"))
+            console.print("[bold red]KeyboardInterrupt received. Goodbye!")
             break

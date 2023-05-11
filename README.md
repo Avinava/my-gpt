@@ -29,4 +29,5 @@ You can exit the chatbot at any time by typing 'bye' or 'exit'
 You can type your message and press enter to see the chatbot's response. To end the conversation, simply type "bye" or "exit".
 
 
+<img width="858" alt="Screenshot 2023-05-11 at 7 24 58 PM" src="https://github.com/Avinava/my-gpt/assets/1398711/51255bc3-f4cb-4082-8b5f-cc3299fe5bc4">
 

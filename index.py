@@ -14,11 +14,10 @@ revision = os.getenv("MODEL_REVISION") or "v1.3-groovy"
 model_name = os.getenv("MODEL_NAME") or "nomic-ai/gpt4all-j"
 
 model = AutoModelForCausalLM.from_pretrained(model_name, revision=revision, device_map='auto') 
-
+tokenizer = AutoTokenizer.from_pretrained(model_name, revision=revision)
 
 # get response from model
 def get_response(input_text):
-    tokenizer = AutoTokenizer.from_pretrained(model_name, revision=revision)
     input_ids = tokenizer.encode(tokenizer.eos_token + input_text + ' \n', return_tensors='pt')
     response_ids = model.generate(input_ids, max_length=256, pad_token_id=tokenizer.eos_token_id)
     response_text = tokenizer.decode(response_ids[0], skip_special_tokens=True)

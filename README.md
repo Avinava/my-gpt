@@ -9,18 +9,22 @@ To run this code using Poetry, you will need to have Poetry installed on your sy
 
 - Clone this repository: `git clone git@github.com:Avinava/my-gpt.git`
 - Navigate to the project directory: `cd my-gpt`
-Install the required packages using Poetry: `poetry install`
-- Note: when you run for the first time, it might take a while to start, since its going to download the models locally
+- Install the required packages using Poetry: `poetry install`
+  - Note: When you run for the first time, it might take a while to start, since it's going to download the models locally. The models used in this code are quite large, around 12GB in total, so the download time will depend on the speed of your internet connection.
+  - Note: The performance of the code also depends on the machine you are running it on. Running it on a machine with better CPU and more RAM will result in faster response times.
 
-# Running the Program
+## Running the Program
 To run the program, simply execute the following command in a terminal or command prompt from the project directory:
-```
+```bash
 poetry run python index.py
 ```
 
 Once the program is running, it will prompt you to enter a message:
-```
->>>
+```bash
+Welcome to 🤖 my-gpt-bot
+You can exit the chatbot at any time by typing 'bye' or 'exit'
+
+🤖 ask my-gpt-bot:
 ```
 You can type your message and press enter to see the chatbot's response. To end the conversation, simply type "bye" or "exit".
 

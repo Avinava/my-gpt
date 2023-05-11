@@ -11,7 +11,7 @@ from rich.prompt import Prompt
 load_dotenv()
 
 revision = os.getenv("MODEL_REVISION") or "v1.3-groovy"
-model_name = os.getenv("MODEL_NAME") or "omic-ai/gpt4all-j"
+model_name = os.getenv("MODEL_NAME") or "nomic-ai/gpt4all-j"
 
 model = AutoModelForCausalLM.from_pretrained(model_name, revision=revision, device_map='auto') 
 
